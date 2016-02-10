@@ -9,6 +9,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var identifier: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,33 +24,67 @@ class HomeViewController: UIViewController {
         
     }
     
-
+    func move(){
+        
+        let targetViewController = self.storyboard!.instantiateViewControllerWithIdentifier( "target" ) as! UIViewController
+        
+        self.presentViewController(targetViewController, animated: true, completion: nil)
+      
+    }
+    
+    
     @IBAction func tops(){
     
+        identifier = 0
+        move()
     }
     
     @IBAction func bottoms(){
+     
+        identifier = 1
+        move()
         
     }
     
     @IBAction func shoes(){
-        
+     
+        identifier = 2
+        move()
     }
     
     @IBAction func socks(){
         
+        identifier = 3
+        move()
     }
     
     @IBAction func accessories(){
         
+        identifier = 4
+        move()
     }
     
     @IBAction func others(){
         
+        identifier = 5
+        move()
     }
     
     @IBAction func calender(){
         
     }
 
-}
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        var topsViewController = segue.destinationViewController as!
+            TopsViewController
+    
+        
+        topsViewController.identifier = self.identifier
+        
+    }
+    
+    }
+    
+
+

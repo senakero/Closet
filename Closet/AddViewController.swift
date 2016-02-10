@@ -10,6 +10,7 @@ import UIKit
 
 class AddViewController: UIViewController {
     
+    var a = String()
     @IBOutlet var addlabel: UILabel!
 
     override func viewDidLoad() {
@@ -24,30 +25,51 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func snap() {
+       
+        a = "snap"
+        addlabel.text = String(a)
     
     }
     
     @IBAction func addtops() {
+        
+        a = "tops"
+        addlabel.text = String(a)
     
     }
     
     @IBAction func addbottoms() {
+        
+        a = "bottoms"
+        addlabel.text = String(a)
     
     }
     
     @IBAction func addshoes() {
         
+        a = "shoes"
+        addlabel.text = String(a)
+        
     }
     
     @IBAction func addsocks() {
+        
+        a = "socks"
+        addlabel.text = String(a)
     
     }
     
     @IBAction func addaccessories() {
     
+        a = "accessories"
+        addlabel.text = String(a)
+        
     }
     
     @IBAction func addothers() {
+        
+        a = "Others"
+        addlabel.text = String(a)
     
     }
     
