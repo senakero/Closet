@@ -46,7 +46,7 @@
                                 </state>
                                 <connections>
                                     <action selector="start" destination="BYZ-38-t0r" eventType="touchDragInside" id="haE-3d-lrk"/>
-                                    <segue destination="1Rm-l8-iak" kind="modal" id="r9O-bY-GJd"/>
+                                    <segue destination="1Rm-l8-iak" kind="modal" identifier="toHome" id="r9O-bY-GJd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,7 +128,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MxL-T3-eTf" kind="modal" id="Zz0-xo-ZQD"/>
+                                    <segue destination="MxL-T3-eTf" kind="modal" identifier="toAdd" id="Zz0-xo-ZQD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocp-PG-ftR">
@@ -146,7 +146,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UPX-IB-Kdx"/>
                     <connections>
-                        <segue destination="uzP-f6-93B" kind="modal" id="g1N-ZX-BmP"/>
+                        <segue destination="uzP-f6-93B" kind="modal" identifier="toPage" id="g1N-ZX-BmP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCl-L1-cqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,10 +277,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpn-ee-OeZ">
                                 <rect key="frame" x="74" y="356" width="83" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="tops">
-                                    <color key="titleColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addtops" destination="MxL-T3-eTf" eventType="touchUpInside" id="qd3-IE-vsd"/>
@@ -288,45 +288,39 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-FZ-9fd">
                                 <rect key="frame" x="165" y="356" width="82" height="41"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.25098040699958801" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="bottoms">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="addbottoms" destination="MxL-T3-eTf" eventType="touchDragInside" id="GOU-Ed-nYe"/>
+                                    <action selector="addbottoms" destination="MxL-T3-eTf" eventType="touchUpInside" id="uy0-1j-HDI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q9-0L-Uy9">
                                 <rect key="frame" x="74" y="401" width="68" height="39"/>
-                                <color key="backgroundColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="shoes"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="shoes">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addshoes" destination="MxL-T3-eTf" eventType="touchUpInside" id="C0y-6H-bL6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz8-sZ-hmM">
                                 <rect key="frame" x="150" y="401" width="97" height="39"/>
-                                <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="accessories">
-                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addaccessories" destination="MxL-T3-eTf" eventType="touchUpInside" id="ngI-TA-jUJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKT-zS-iXm">
-                                <rect key="frame" x="74" y="445" width="93" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="socks"/>
-                                <connections>
-                                    <action selector="addsocks" destination="MxL-T3-eTf" eventType="touchUpInside" id="JDn-nN-p4W"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG5-WC-mxp">
                                 <rect key="frame" x="175" y="444" width="72" height="35"/>
-                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="others">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addothers" destination="MxL-T3-eTf" eventType="touchUpInside" id="N4K-R5-sAq"/>
@@ -336,12 +330,28 @@
                                 <rect key="frame" x="62" y="305" width="196" height="30"/>
                                 <state key="normal" title="or take photo from camera..."/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKT-zS-iXm">
+                                <rect key="frame" x="74" y="445" width="93" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="socks">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addsocks" destination="MxL-T3-eTf" eventType="touchUpInside" id="JDn-nN-p4W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="W12-Rt-cki"/>
                     <connections>
+                        <outlet property="addaccessoriesbutton" destination="Tz8-sZ-hmM" id="SAE-Xk-RRR"/>
+                        <outlet property="addbottomsbutton" destination="tEL-FZ-9fd" id="Tcg-dP-0c6"/>
                         <outlet property="addlabel" destination="xMB-YI-ZIT" id="da9-78-7iw"/>
+                        <outlet property="addothersbutton" destination="YG5-WC-mxp" id="aGe-0C-4ZR"/>
+                        <outlet property="addshoesbutton" destination="1Q9-0L-Uy9" id="McJ-x0-ek9"/>
+                        <outlet property="addsocksbutton" destination="lKT-zS-iXm" id="cw5-1V-FaF"/>
+                        <outlet property="addtopsbutton" destination="tpn-ee-OeZ" id="5Xc-eM-yXE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDH-rb-9MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
