@@ -8,12 +8,12 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet var table: UITableView!
     
     var a = String()
     @IBOutlet var addlabel: UILabel!
-    
-    
     
     @IBOutlet var addtopsbutton: UIButton!
     
@@ -27,6 +27,14 @@ class AddViewController: UIViewController {
     
     @IBOutlet var addothersbutton: UIButton!
     
+    @IBOutlet var confirmView: UIImageView!
+    
+    @IBOutlet var plusimage: UIImageView!
+    
+    var identifier: Int!
+    
+    let saveData: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +45,40 @@ class AddViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func pickImageFromCamera() {
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+            let controller = UIImagePickerController()
+
+            controller.delegate = self
+            controller.sourceType = UIImagePickerControllerSourceType.Camera
+            self.presentViewController(controller, animated: true, completion: nil)
+        
+        }
+    }
+    
+    func pickImageFromLibrary() {
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+            let controller = UIImagePickerController()
+            
+            controller.delegate = self
+            controller.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.presentViewController(controller, animated: true, completion: nil)
+            
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info:
+        [String : AnyObject]) {
+            
+            let image: UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
+            
+            confirmView.image = image
+            
+            picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func topscolor() {
@@ -184,6 +226,7 @@ class AddViewController: UIViewController {
         
     }
     
+    
     func otherscolor() {
         
         if a == "Others"{
@@ -210,23 +253,95 @@ class AddViewController: UIViewController {
             self.addothersbutton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
             
         }
-        
     }
     
     
-    @IBAction func snap() {
+    func savemethod() {
+        
+      let confirmData:NSData = UIImagePNGRepresentation(confirmView.image!)!
+            
+            if identifier == 0{
+                
+//                topsArray = ["a", "b", "c"]
+            
+                var topsArray = [NSData]()
+                topsArray.append(confirmData)
+//                topsArray += [confirmData]
+                
+                saveData.setObject(topsArray, forKey: "zero")
+                saveData.synchronize()
+                
+            }else if identifier == 1{
+                
+//                bottomsArray = ["d", "e", "f"]
+                
+                var bottomsArray = [NSData]()
+                bottomsArray.append(confirmData)
+                
+                saveData.setObject(confirmView.image, forKey: "one")
+                saveData.synchronize()
+                
+            }else if identifier == 2{
+                
+                var socksArray = [NSData]()
+                socksArray.append(confirmData)
+                
+                saveData.setObject(confirmView.image, forKey: "two")
+                saveData.synchronize()
+                
+            }else if identifier == 3{
+                
+                saveData.setObject(confirmView.image, forKey: "three")
+                saveData.synchronize()
+                
+            }else if identifier == 4{
+                
+                saveData.setObject(confirmView.image, forKey: "four")
+                saveData.synchronize()
+                
+            }else{
+                
+                saveData.setObject(confirmView.image, forKey: "image")
+                saveData.synchronize()
+                
+            }
+    }
+    
+    @IBAction func snap(sender: AnyObject) {
         
         a = "snap"
         addlabel.text = a
         
+        self.pickImageFromCamera()
+        self.pickImageFromLibrary()
+        
     }
+    
+    @IBAction func selectpic() {
+        
+        //UIImagePickerControllerのインスタンスを作る
+        var imagePickerController: UIImagePickerController = UIImagePickerController()
+        
+        //フォトライブラリを使う設定をする
+        imagePickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
+        
+        
+        //フォトライブラリを呼び出す
+        self.presentViewController(imagePickerController, animated: true, completion: nil)
+        
+    }
+    
     
     @IBAction func addtops() {
         
         a = "tops"
-        addlabel.text = String(a)
+        addlabel.text = a
         
         topscolor()
+        
+        identifier = 0
         
     }
     
@@ -236,6 +351,8 @@ class AddViewController: UIViewController {
         addlabel.text = a
         
         bottomscolor()
+        
+        identifier = 1
         
     }
     
@@ -247,6 +364,8 @@ class AddViewController: UIViewController {
         
         shoescolor()
         
+        identifier = 2
+        
     }
     
     @IBAction func addsocks() {
@@ -255,6 +374,8 @@ class AddViewController: UIViewController {
         addlabel.text = a
         
         sockscolor()
+        
+        identifier = 3
         
     }
     
@@ -265,6 +386,8 @@ class AddViewController: UIViewController {
         addlabel.text = a
         
         accessoriescolor()
+        
+        identifier = 4
     }
     
     @IBAction func addothers() {
@@ -272,14 +395,22 @@ class AddViewController: UIViewController {
         a = "Others"
         addlabel.text = a
         otherscolor()
+        
+        identifier = 5
     }
     
     @IBAction func save() {
         
-    }
+        savemethod()
+            
+        }
+    
     
     @IBAction func back() {
         self.dismissViewControllerAnimated(true, completion: nil)
+        
+    
+
     }
     
 }

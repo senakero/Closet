@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     @IBOutlet var namelabel: UILabel!
     @IBOutlet var closetlabel: UILabel!
+    @IBOutlet var pluskun: UIImageView!
 
     
     override func viewDidLoad() {

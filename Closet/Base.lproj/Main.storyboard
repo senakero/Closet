@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,38 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="closetaaa.png" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-vm-3Kh">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageCloset.png" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-vm-3Kh">
+                                <rect key="frame" x="0.0" y="24" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Back to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTX-fT-HEz">
-                                <rect key="frame" x="92" y="28" width="161" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="85" y="89" width="161" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sena's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmc-ij-YLc">
-                                <rect key="frame" x="60" y="38" width="135" height="79"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Closet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXh-pa-fDL">
-                                <rect key="frame" x="133" y="96" width="134" height="43"/>
+                                <rect key="frame" x="132" y="187" width="134" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGc-9v-VwB">
-                                <rect key="frame" x="79" y="377" width="162" height="96"/>
+                                <rect key="frame" x="99" y="238" width="121" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Log in">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="start" destination="BYZ-38-t0r" eventType="touchDragInside" id="haE-3d-lrk"/>
                                     <segue destination="1Rm-l8-iak" kind="modal" identifier="toHome" id="r9O-bY-GJd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sena's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmc-ij-YLc">
+                                <rect key="frame" x="80" y="117" width="135" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Plus.png" translatesAutoresizingMaskIntoConstraints="NO" id="Db2-g0-Urh">
+                                <rect key="frame" x="196" y="488" width="90" height="74"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -56,6 +59,7 @@
                         <outlet property="closetlabel" destination="rXh-pa-fDL" id="fqQ-Pj-v1P"/>
                         <outlet property="label" destination="FTX-fT-HEz" id="MRT-dE-aYE"/>
                         <outlet property="namelabel" destination="Hmc-ij-YLc" id="9yU-M3-zEB"/>
+                        <outlet property="pluskun" destination="Db2-g0-Urh" id="5Cr-t1-BcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -78,35 +82,19 @@
                                 <rect key="frame" x="-159" y="300" width="226" height="268"/>
                                 <state key="normal" image="calender PNG.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vc-Cx-tM0">
-                                <rect key="frame" x="0.0" y="66" width="160" height="237"/>
-                                <state key="normal" title="TOPs" backgroundImage="bottoms.png">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-BG-tfE">
+                                <rect key="frame" x="160" y="174" width="157" height="116"/>
+                                <state key="normal" title="SHOES" backgroundImage="2nd box.png">
                                     <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="tops" destination="1Rm-l8-iak" eventType="touchUpInside" id="ucw-gm-h0K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-BG-tfE">
-                                <rect key="frame" x="161" y="169" width="159" height="116"/>
-                                <state key="normal" title="SHOES" backgroundImage="box 2.png"/>
                                 <connections>
                                     <action selector="shoes" destination="1Rm-l8-iak" eventType="touchUpInside" id="Zb7-Md-IsE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-qf-h1m">
-                                <rect key="frame" x="63" y="300" width="97" height="248"/>
-                                <state key="normal" title="BOTTOMs" backgroundImage="スクリーンショット 2016-01-27 18.57.38.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="bottoms" destination="1Rm-l8-iak" eventType="touchUpInside" id="cLN-Oj-nuZ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-J8-yEO">
-                                <rect key="frame" x="161" y="411" width="160" height="137"/>
+                                <rect key="frame" x="159" y="408" width="161" height="140"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="OTHERS" backgroundImage="box 4.png">
+                                <state key="normal" title="OTHERS" backgroundImage="xbox.png">
                                     <color key="titleColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -114,31 +102,49 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4c-59-Q7p">
-                                <rect key="frame" x="161" y="293" width="159" height="119"/>
-                                <state key="normal" title="ACCESSORIES" backgroundImage="box 1.png"/>
+                                <rect key="frame" x="158" y="289" width="162" height="119"/>
+                                <state key="normal" title="Accessories" backgroundImage="Accessories.png">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="accessories" destination="1Rm-l8-iak" eventType="touchUpInside" id="kGQ-Mi-FcR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghr-Hl-Uyg">
-                                <rect key="frame" x="7" y="8" width="53" height="44"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocp-PG-ftR">
+                                <rect key="frame" x="155" y="66" width="165" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Socks" backgroundImage="Socks.png">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="socks" destination="1Rm-l8-iak" eventType="touchDragInside" id="iTr-hf-xu7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-qf-h1m">
+                                <rect key="frame" x="57" y="300" width="97" height="248"/>
+                                <state key="normal" title="BOTTOMs" backgroundImage="DOWN.png">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottoms" destination="1Rm-l8-iak" eventType="touchUpInside" id="cLN-Oj-nuZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghr-Hl-Uyg">
+                                <rect key="frame" x="230" y="0.0" width="61" height="63"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="MxL-T3-eTf" kind="modal" identifier="toAdd" id="Zz0-xo-ZQD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocp-PG-ftR">
-                                <rect key="frame" x="161" y="66" width="159" height="111"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="SOCKS" backgroundImage="box 3.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vc-Cx-tM0">
+                                <rect key="frame" x="-7" y="66" width="161" height="237"/>
+                                <state key="normal" title="TOPs" backgroundImage="TOPS.png">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="socks" destination="1Rm-l8-iak" eventType="touchDragInside" id="iTr-hf-xu7"/>
+                                    <action selector="tops" destination="1Rm-l8-iak" eventType="touchUpInside" id="ucw-gm-h0K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -165,17 +171,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="closetaaa.png" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-6e-z1c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageCloset.png" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-6e-z1c">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TOPs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLP-rU-oCA">
-                                <rect key="frame" x="139" y="27" width="130" height="27"/>
+                                <rect key="frame" x="76" y="18" width="165" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOk-45-kyH">
-                                <rect key="frame" x="238" y="468" width="76" height="80"/>
+                                <rect key="frame" x="253" y="484" width="61" height="64"/>
                                 <state key="normal" title="Button" image="gargabe PNG.png"/>
                                 <connections>
                                     <action selector="garbage" destination="uzP-f6-93B" eventType="touchUpInside" id="4eX-jo-UNo"/>
@@ -183,29 +190,30 @@
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u7G-Oi-Os2">
                                 <rect key="frame" x="10" y="57" width="300" height="403"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UH9-vm-aig">
-                                    <size key="itemSize" width="127" height="136"/>
+                                    <size key="itemSize" width="116" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="NZC-9G-iEY" customClass="CustomCell" customModule="Closet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="127" height="136"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="127" height="136"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCL-TH-xNc">
-                                                    <rect key="frame" x="4" y="8" width="116" height="79"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-88-Y85">
-                                                    <rect key="frame" x="27" y="97" width="72" height="31"/>
+                                                    <rect key="frame" x="24" y="87" width="72" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCL-TH-xNc">
+                                                    <rect key="frame" x="4" y="8" width="108" height="76"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -215,12 +223,17 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="uzP-f6-93B" id="adf-Of-cYH"/>
+                                    <outlet property="delegate" destination="uzP-f6-93B" id="t96-17-e1z"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Yn-3v-Y1u"/>
                     <connections>
+                        <outlet property="collectionview" destination="u7G-Oi-Os2" id="cKv-fW-xBB"/>
                         <outlet property="subtitle" destination="MLP-rU-oCA" id="ffs-PP-r2a"/>
                     </connections>
                 </viewController>
@@ -249,15 +262,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Something?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMB-YI-ZIT">
-                                <rect key="frame" x="61" y="67" width="230" height="30"/>
+                                <rect key="frame" x="47" y="61" width="230" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6x-mw-6bv">
-                                <rect key="frame" x="84" y="105" width="153" height="192"/>
+                                <rect key="frame" x="84" y="294" width="153" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Take Snap" backgroundImage="camera PNG.png">
+                                <state key="normal" title="Take Snap">
                                     <color key="titleColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -265,7 +279,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I01-Jd-xnG">
-                                <rect key="frame" x="96" y="494" width="128" height="35"/>
+                                <rect key="frame" x="98" y="511" width="128" height="35"/>
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Save It!">
@@ -276,10 +290,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpn-ee-OeZ">
-                                <rect key="frame" x="74" y="356" width="83" height="40"/>
+                                <rect key="frame" x="70" y="379" width="83" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="tops">
+                                <state key="normal" title="TOPS">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -287,9 +301,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-FZ-9fd">
-                                <rect key="frame" x="165" y="356" width="82" height="41"/>
+                                <rect key="frame" x="161" y="379" width="82" height="41"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="bottoms">
+                                <state key="normal" title="BOTTOMS">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -297,9 +311,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q9-0L-Uy9">
-                                <rect key="frame" x="74" y="401" width="68" height="39"/>
+                                <rect key="frame" x="70" y="424" width="68" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="shoes">
+                                <state key="normal" title="SHOES">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -307,9 +321,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz8-sZ-hmM">
-                                <rect key="frame" x="150" y="401" width="97" height="39"/>
+                                <rect key="frame" x="146" y="424" width="106" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="accessories">
+                                <state key="normal" title="ACCESSORIES">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -317,27 +331,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG5-WC-mxp">
-                                <rect key="frame" x="175" y="444" width="72" height="35"/>
+                                <rect key="frame" x="171" y="467" width="72" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="others">
+                                <state key="normal" title="OTHERS">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addothers" destination="MxL-T3-eTf" eventType="touchUpInside" id="N4K-R5-sAq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-He-1hx">
-                                <rect key="frame" x="62" y="305" width="196" height="30"/>
-                                <state key="normal" title="or take photo from camera..."/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKT-zS-iXm">
-                                <rect key="frame" x="74" y="445" width="93" height="34"/>
+                                <rect key="frame" x="70" y="468" width="93" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="socks">
+                                <state key="normal" title="SOCKS">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addsocks" destination="MxL-T3-eTf" eventType="touchUpInside" id="JDn-nN-p4W"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera PNG.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3J-Yh-sDI">
+                                <rect key="frame" x="58" y="105" width="197" height="176"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Plus.png" translatesAutoresizingMaskIntoConstraints="NO" id="nxa-Wv-opp">
+                                <rect key="frame" x="235" y="69" width="72" height="69"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-He-1hx">
+                                <rect key="frame" x="62" y="342" width="196" height="39"/>
+                                <state key="normal" title="or take photo from camera..."/>
+                                <connections>
+                                    <action selector="selectpic" destination="MxL-T3-eTf" eventType="touchUpInside" id="VPs-At-NAS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -352,6 +375,8 @@
                         <outlet property="addshoesbutton" destination="1Q9-0L-Uy9" id="McJ-x0-ek9"/>
                         <outlet property="addsocksbutton" destination="lKT-zS-iXm" id="cw5-1V-FaF"/>
                         <outlet property="addtopsbutton" destination="tpn-ee-OeZ" id="5Xc-eM-yXE"/>
+                        <outlet property="confirmView" destination="W3J-Yh-sDI" id="dtc-27-sUI"/>
+                        <outlet property="plusimage" destination="nxa-Wv-opp" id="gmz-Ge-7QM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDH-rb-9MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -360,15 +385,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bottoms.png" width="314" height="524"/>
-        <image name="box 1.png" width="160" height="116"/>
-        <image name="box 2.png" width="158" height="162"/>
-        <image name="box 3.png" width="158" height="134"/>
-        <image name="box 4.png" width="160" height="138"/>
+        <image name="2nd box.png" width="556" height="358"/>
+        <image name="Accessories.png" width="340" height="234"/>
+        <image name="DOWN.png" width="350" height="568"/>
+        <image name="ImageCloset.png" width="2550" height="1936"/>
+        <image name="Plus.png" width="339" height="351"/>
+        <image name="Socks.png" width="352" height="214"/>
+        <image name="TOPS.png" width="358" height="580"/>
         <image name="calender PNG.png" width="256" height="246"/>
         <image name="camera PNG.png" width="570" height="713"/>
-        <image name="closetaaa.png" width="3000" height="2460"/>
         <image name="gargabe PNG.png" width="626" height="626"/>
-        <image name="スクリーンショット 2016-01-27 18.57.38.png" width="196" height="490"/>
+        <image name="xbox.png" width="574" height="404"/>
     </resources>
 </document>

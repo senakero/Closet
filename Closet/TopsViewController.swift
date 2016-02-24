@@ -8,15 +8,22 @@
 
 import UIKit
 
-class TopsViewController: UIViewController {
+class TopsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+    
+    @IBOutlet var collectionview: UICollectionView!
     
     var identifier: Int!
-    
     @IBOutlet var subtitle: UILabel!
-
+    
+    @IBOutlet var confirmView: UIImageView!
+    
+    let saveData: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        confirmView.image = saveData.objectForKey ("image") as! UIImage?
+
         if identifier == 0 {
             
             subtitle.text = "Tops"
@@ -41,27 +48,29 @@ class TopsViewController: UIViewController {
             
             subtitle.text = "Others"
             
-        }
-        
-        NSLog("渡された値は...%dです", identifier)
-        // Do any additional setup after loading the view.
     }
     
-
+        NSLog("渡された値は...%dです", identifier)
+        // Do any additional setup after loading the view.
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - UICollectionViewDelegate Protocol
-
+    
+    
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell:CustomCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CustomCell
         cell.title.text = "タイトル";
-        cell.image.image = UIImage(named: "apple.jpg")
-        cell.backgroundColor = UIColor.blackColor()
+        cell.image.image = UIImage(named: "image")
+        cell.backgroundColor = UIColor.whiteColor()
         return cell
+        
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -73,9 +82,10 @@ class TopsViewController: UIViewController {
     }
     
     
+    
     @IBAction func garbage(){
         
     }
-
-    }
+    
+}
 
